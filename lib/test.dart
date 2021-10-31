@@ -32,7 +32,7 @@ class _TestState extends State<Test> with SingleTickerProviderStateMixin {
           children: [
             TextFormField(validator: (text) {
               if (text!.length < 4) {
-                return "error";
+                return "ahmsss";
               }
               return null;
             }),
