@@ -28,11 +28,24 @@ class _TestState extends State<Test> with SingleTickerProviderStateMixin {
       ),
       body: Form(
         key: formstate,
+        autovalidateMode: AutovalidateMode.always,
         child: Column(
           children: [
             TextFormField(validator: (text) {
               if (text!.length < 4) {
                 return "ahmsss";
+              }
+              if (text == "ahmad") {
+                return "perfect input";
+              }
+              return null;
+            }),
+            TextFormField(validator: (text) {
+              if (text!.length < 4) {
+                return "ahmsss";
+              }
+              if (text == "ahmad") {
+                return "perfect input";
               }
               return null;
             }),
