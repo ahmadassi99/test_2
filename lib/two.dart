@@ -11,7 +11,7 @@ class two extends StatelessWidget {
         ),
         body: Column(
           children: [
-            Text("page two"),
+            Text("page tso"),
             ElevatedButton(
                 onPressed: () {
                   Navigator.of(context).pop();
